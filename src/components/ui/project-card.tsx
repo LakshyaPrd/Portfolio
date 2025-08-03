@@ -1,6 +1,7 @@
 // components/project-card.tsx
 "use client";
 import React from "react";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -21,10 +22,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => (
   <div className="bg-neutral-900 border border-white/10 rounded-2xl shadow-xl p-6 flex flex-col transition hover:border-blue-500">
     {/* Image */}
-    <img
+    <Image
       src={image}
       alt={title}
       className="rounded-lg mb-4 object-cover h-[300px] w-full border border-white/10"
+      width={500}
+      height={300}
     />
     {/* Title */}
     <h3 className="text-xl font-semibold text-white mb-4">{title}</h3>

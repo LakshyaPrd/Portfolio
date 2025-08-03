@@ -55,8 +55,8 @@ const page = () => {
       </div>
       
       <div className='max-w-6xl mx-auto px-4 md:px-10 flex flex-col items-left gap-3'>
-        <h1 className='text-3xl bg-clip-text text-transparent h-14 drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 font-bold tracking-tighter text-left sm:text-4xl md:text-5xl'>Project's</h1>
-        <p className='text-gray-200'>Welcome to my projects showcase! Below, you'll find a selection of projects 
+        <h1 className='text-3xl bg-clip-text text-transparent h-14 drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 font-bold tracking-tighter text-left sm:text-4xl md:text-5xl'>Project&apos;s</h1>
+        <p className='text-gray-200'>Welcome to my projects showcase! Below, you&apos;ll find a selection of projects 
           that showcase my skills and passion for building innovative solutions. Each project represents 
           a unique journey of problem-solving, creativity, and continuous learning...</p>
         

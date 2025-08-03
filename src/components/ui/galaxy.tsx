@@ -231,7 +231,42 @@ export default function Galaxy({
       gl.clearColor(0, 0, 0, 1);
     }
 
-    let program: Program;
+    let program = new Program(gl, {
+  vertex: vertexShader,
+  fragment: fragmentShader,
+  uniforms: {
+    uTime: { value: 0 },
+    uResolution: {
+      value: new Color(
+        gl.canvas.width,
+        gl.canvas.height,
+        gl.canvas.width / gl.canvas.height
+      ),
+    },
+    uFocal: { value: new Float32Array(focal) },
+    uRotation: { value: new Float32Array(rotation) },
+    uStarSpeed: { value: starSpeed },
+    uDensity: { value: density },
+    uHueShift: { value: hueShift },
+    uSpeed: { value: speed },
+    uMouse: {
+      value: new Float32Array([
+        smoothMousePos.current.x,
+        smoothMousePos.current.y,
+      ]),
+    },
+    uGlowIntensity: { value: glowIntensity },
+    uSaturation: { value: saturation },
+    uMouseRepulsion: { value: mouseRepulsion },
+    uTwinkleIntensity: { value: twinkleIntensity },
+    uRotationSpeed: { value: rotationSpeed },
+    uRepulsionStrength: { value: repulsionStrength },
+    uMouseActiveFactor: { value: 0.0 },
+    uAutoCenterRepulsion: { value: autoCenterRepulsion },
+    uTransparent: { value: transparent },
+  },
+});
+
 
     function resize() {
       const scale = 1;

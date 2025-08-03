@@ -5,6 +5,7 @@ import { HomeIcon, BriefcaseIcon, EnvelopeIcon } from '@heroicons/react/24/outli
 import CIcon from '@coreui/icons-react';
 import { cilEducation } from '@coreui/icons';
 import { SiOpenai } from 'react-icons/si';
+import Link from "next/link";
 
 const Navbar = () => {
   const router = useRouter();
@@ -35,21 +36,21 @@ const Navbar = () => {
 
         {/* Mobile Nav Links */}
         <div className="flex items-center gap-1">
-          <a href="/" className="p-2 rounded-lg hover:bg-white/10 transition-colors">
+          <Link href="/" className="p-2 rounded-lg hover:bg-white/10 transition-colors">
             <HomeIcon className="w-4 h-4 text-white/70" />
-          </a>
-          <a href="/projects" className="p-2 rounded-lg hover:bg-white/10 transition-colors">
+          </Link>
+          <Link href="/projects" className="p-2 rounded-lg hover:bg-white/10 transition-colors">
             <BriefcaseIcon className="w-4 h-4 text-white/70" />
-          </a>
-          <a href="/my-ai" className="p-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
+          </Link>
+          <Link href="/my-ai" className="p-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
             <SiOpenai className="w-4 h-4 text-white/70" />
-          </a>
-          <a href="/about" className="p-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
+          </Link>
+          <Link href="/about" className="p-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
             <CIcon icon={cilEducation} className="w-4 h-4 text-white/70" />
-          </a>
-          <a href="/contact" className="p-2 rounded-lg hover:bg-white/10 transition-colors">
+          </Link>
+          <Link href="/contact" className="p-2 rounded-lg hover:bg-white/10 transition-colors">
             <EnvelopeIcon className="w-4 h-4 text-white/70" />
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -75,26 +76,26 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <div className="flex items-center gap-2 md:gap-10 text-white/80 text-xs md:text-base">
-          <a href="/" className="flex items-center gap-1 focus:outline-none focus:ring-1 p-1">
+          <Link href="/" className="flex items-center gap-1 focus:outline-none focus:ring-1 p-1">
             <HomeIcon className="h-3 w-3" />
             <span className="hidden md:inline">Home</span>
-          </a>
-          <a href="/projects" className="flex items-center gap-1 focus:outline-none focus:ring-1 p-1">
+          </Link>
+          <Link href="/projects" className="flex items-center gap-1 focus:outline-none focus:ring-1 p-1">
             <BriefcaseIcon className="h-3 w-3" />
             <span className="hidden md:inline">Projects</span>
-          </a>
-          <a href="/my-ai" className="flex items-center gap-1 cursor-pointer focus:outline-none focus:ring-1 p-1">
+          </Link>
+          <Link href="/my-ai" className="flex items-center gap-1 cursor-pointer focus:outline-none focus:ring-1 p-1">
             <SiOpenai className="h-3 w-3" />
             <span className="hidden md:inline">My-AI</span>
-          </a>
-          <a href="/about" className="flex items-center gap-1 cursor-pointer focus:outline-none focus:ring-1 p-1">
+          </Link>
+          <Link href="/about" className="flex items-center gap-1 cursor-pointer focus:outline-none focus:ring-1 p-1">
             <CIcon icon={cilEducation} className="h-3 w-3 text-white/80" />
             <span className="hidden md:inline">Education</span>
-          </a>
-          <a href="/contact" className="flex items-center gap-1 focus:outline-none focus:ring-1 p-1">
+          </Link>
+          <Link href="/contact" className="flex items-center gap-1 focus:outline-none focus:ring-1 p-1">
             <EnvelopeIcon className="h-3 w-3" />
             <span className="hidden md:inline">Contact</span>
-          </a>
+          </Link>
         </div>
       </nav>
     </div>

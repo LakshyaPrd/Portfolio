@@ -46,7 +46,7 @@ const Hero = () => {
               textClassName="text-white bg-clip-text"
             />
             <p className="text-3xl md:text-5xl text-white max-w-2xl">
-              ,I'm
+              ,I&apos;m
             </p>
           </div>
 

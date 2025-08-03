@@ -1,20 +1,15 @@
 // components/about-me.tsx
 import React from 'react';
+import Image from 'next/image';
 
 const AboutMe = () => {
-  const techStack = [
-    "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express.js",
-    "MongoDB", "PostgreSQL", "Tailwind CSS", "Git", "AWS", "Docker",
-    "Python", "Java", "HTML/CSS", "Redux", "Socket.io", "REST APIs"
-  ];
-
-  return (
+    return (
     <div className="min-h-screen md:pt-32 pt-20 text-white p-4 md:p-8 bg-black">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-4">
         {/* Left: Profile Image + Tech and Spoken Language */}
         <div className="lg:col-span-2 flex flex-col items-left space-y-6">
           <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white/20 mb-4">
-            <img src="/lakshya.jpg" alt="Lakshya Pradhan" className="object-cover w-full h-full" />
+            <Image src="/lakshya.jpg" alt="Lakshya Pradhan" className="object-cover w-full h-full" width={100} height={100}/>
           </div>
 
           <div className='bg-black bg-opacity-50 rounded-xl p-6 border border-gray-700 w-full max-w-md'>
@@ -143,7 +138,7 @@ const AboutMe = () => {
           {/* About Paragraph */}
           <div className="max-w-5xl space-y-2 text-gray-300 text-lg mb-10">
             <p>
-              I'm a passionate and results-driven Full Stack Developer with strong expertise in the MERN stack, TypeScript, Next.js, and cloud-based technologies. Currently working at Newral, one of India's top tech agencies, I collaborate with both US-based clients and leading Indian edtech startups to build scalable, high-performance applications.
+              I&apos;m a passionate and results-driven Full Stack Developer with strong expertise in the MERN stack, TypeScript, Next.js, and cloud-based technologies. Currently working at Newral, one of India&apos;s top tech agencies, I collaborate with both US-based clients and leading Indian edtech startups to build scalable, high-performance applications.
             </p>
           </div>
 
@@ -163,7 +158,7 @@ const AboutMe = () => {
                   <p className='text-neutral-200 text-xs md:text-sm font-normal mb-6'>Collaborating with engineers and officials, I enhanced my skills in analysis, documentation, and system understanding. This internship gave me a strong foundation in infrastructure coordination and public sector technology operations.</p>
                 <div className='grid grid-cols-2 gap-4'>
                   {["/main.png", "/submit.png", "/track.png", "/main.png"].map((src, i) => (
-                    <img key={i} src={src} alt="CMS" className='rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-lg' />
+                    <Image key={i} src={src} alt="CMS" className='rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-lg' width={100} height={100} />
                   ))}
                 </div>
               </div>
@@ -179,7 +174,7 @@ const AboutMe = () => {
                 <p className='text-neutral-200 text-xs md:text-sm font-normal mb-6'>As a freelance developer, I worked with Coffee Kala, a cozy and aesthetic café based in Jaipur, to design and build their official website. The goal was to create a digital presence that reflected the café’s unique vibe and allowed customers to engage more easily online.</p>
                 <div className='grid grid-cols-2 gap-4'>
                   {["/coffee1.png", "/coffee2.png", "/coffee3.png", "/coffee4.png"].map((src, i) => (
-                    <img key={i} src={src} alt="CK" className='rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-lg' />
+                    <Image key={i} src={src} alt="CK" className='rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-lg' width={100} height={100} />
                   ))}
                 </div>
               </div>

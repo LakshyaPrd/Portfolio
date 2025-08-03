@@ -107,7 +107,7 @@ const MyAI = () => {
         {!chatStarted ? (
           <div className='bg-black bg-opacity-50 rounded-xl p-8 border border-gray-700'>
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold mb-4">Hi! I'm Lakshya's Bot</h2>
+              <h2 className="text-2xl font-bold mb-4">Hi! I&apos;m Lakshya&apos;s Bot</h2>
               <p className="text-lg text-gray-300 mb-6">Chat now!</p>
               <p className="text-gray-300 mb-8">
                 You can ask me about my skills, experiences, projects, or anything related to my journey in tech and beyond. What would you like to know?
@@ -131,7 +131,7 @@ const MyAI = () => {
                 onClick={startChat}
                 className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
-                Let's Chat
+                Let&apos;s Chat
               </button>
             </div>
           </div>
